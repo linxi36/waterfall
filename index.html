@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      body,ul,li{
+          margin:0;
+          padding:0;
+          list-style: none;
+      }
+      .wrapper{
+          text-align: center;
+      }
+      .list{
+          min-width:1000px;
+          display: inline-block;
+          border:2px solid green;
+      }
+      .clearfix::after{
+          contain: "";
+          display: block;
+          clear: both;
+      }
+      .list li{
+          float:left;
+      }
+        .list img{
+            width:250px;
+        }
+        .item{
+            border:1px solid #ccc;
+            margin:3px;
+            padding:3px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper ">
+        <ul class="list clearfix">
+            <li>
+                <div class="item"><img src="./img/4.jpg" alt=""></div>
+            </li>
+            <li>
+                <div class="item"><img src="./img/2.jpg" alt=""></div>
+            </li>
+            <li>
+                <div class="item"><img src="./img/3.jpg" alt=""></div>
+            </li>
+            <li>
+                <div class="item"><img src="./img/5.jpg" alt=""></div>
+            </li>
+        </ul>
+    </div>
+    <script src="ajax.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
